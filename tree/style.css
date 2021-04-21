@@ -34,6 +34,7 @@
   --link-border-size: 1px;
   --link-border-style: solid;
   --link-border-width: 2px;
+  --link-border-radius: 0%;
 
   /* links for the bottom text configuration */
   --bottom-text-font-weight: bold;
@@ -45,7 +46,7 @@
 body {
   background: var(--bg-color);
   color: var(--font-color)
-  font-family: var(--document-default-fonts);
+  font-family: var(--document-default-fonts) !important;
   font-size: 15px;
   letter-spacing: var(--document-letter-spacing);
 }
@@ -77,11 +78,19 @@ a:hover {
   max-width: 100px;
 }
 
+
+
+
 /* style for the profile name */
 .name {
   text-align: var(--document-text-align);
   padding: 30px;
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
+
+
+
 
 /* style for the links of the application */
 .link {
@@ -90,16 +99,35 @@ a:hover {
   padding: 20px; 
   border: var(--link-border-size) var(--link-border-style) var(--link-border-color);
   border-width: var(--link-border-width);
+  border-radius: var(--link-border-radius);
+  width: 290px;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
 }
+
+
+
 
 /* style for the footer */
 .bottom-text-div {
   text-align: var(--document-text-align);
   margin-top: 40px;
-  font-size: 20px;
+  font-size: 9px;
   font-weight: var(--bottom-text-font-weight);
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 
+
+
+/* media queries */
+@media only screen and (max-width:270) {
+  /* hide some of the contents if the screen is super small */
+  .hide {
+    display: none !important;
+  }
+}
 /*
  * End of the css file. Created by Pablo Corbalán De Conepciñón.
  * Please, check out the site if you are interested:
