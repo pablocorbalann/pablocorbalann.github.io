@@ -1,0 +1,108 @@
+/*
+ * This file is part of: github.com/pablocorbalann/pabloccorbalann.github.io
+ *
+ * It's the main (and single) CSS style sheet of the tree/ subdirectory (you
+ * can check the web at: https://pablocorbalann.github.io/tree). The purpose 
+ * of this css is to style the index.html file for displaying a "tree" of links
+ * in the website.
+ *
+ * Created by Pablo Corbalán De Concepción: @pablocorbalann
+ *
+ * For more information, please read the README.md file (located in the tree/ 
+ * subdirectory [tree/README.md])
+ */
+
+/* variables for the theme */
+:root {
+  /* general configuration */
+  --bg-color: #000000;
+  --font-color: #ffffff;
+
+  /* document configuration */
+  --document-default-fonts: 'Open Sans', sans-serif;
+  --document-text-align: center;
+  --document-letter-spacing: 2px;
+  
+  /* profile picture configuration */
+  --profile-picture-radius: 50%;
+
+  /* links configuration */
+  --link-transition-time: 1s;
+  --link-hover-color: var(--bg-color);
+  --link-hover-bg: var(--font-color);
+  --link-border-color: #ffffff;
+  --link-border-size: 1px;
+  --link-border-style: solid;
+  --link-border-width: 2px;
+
+  /* links for the bottom text configuration */
+  --bottom-text-font-weight: bold;
+}
+
+
+
+/* general styles for html tags in the page */
+body {
+  background: var(--bg-color);
+  color: var(--font-color)
+  font-family: var(--document-default-fonts);
+  font-size: 15px;
+  letter-spacing: var(--document-letter-spacing);
+}
+
+img {
+  border-radius: var(--profile-picture-radius);
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--font-color);
+  transition: color var(--link-transition-time);
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  background: var(--link-hover-bg);
+}
+
+
+
+/* style for the profile picture */
+.profile-picture-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  height: auto;
+  max-width: 100px;
+}
+
+/* style for the profile name */
+.name {
+  text-align: var(--document-text-align);
+  padding: 30px;
+}
+
+/* style for the links of the application */
+.link {
+  text-align: var(--document-text-align);
+  margin-top: 20px;
+  padding: 20px; 
+  border: var(--link-border-size) var(--link-border-style) var(--link-border-color);
+  border-width: var(--link-border-width);
+}
+
+/* style for the footer */
+.bottom-text-div {
+  text-align: var(--document-text-align);
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: var(--bottom-text-font-weight);
+}
+
+/*
+ * End of the css file. Created by Pablo Corbalán De Conepciñón.
+ * Please, check out the site if you are interested:
+ * htts://pablocorbalann.github.io/tree
+ * And remember to give us a star on the github repo!
+ */
