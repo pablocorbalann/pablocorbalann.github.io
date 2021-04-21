@@ -15,8 +15,8 @@
 /* variables for the theme */
 :root {
   /* general configuration */
-  --bg-color: #000000;
-  --font-color: #ffffff;
+  --bg-color: #fff;
+  --font-color: #000;
 
   /* document configuration */
   --document-default-fonts: 'Open Sans', sans-serif;
@@ -30,7 +30,7 @@
   --link-transition-time: 1s;
   --link-hover-color: var(--bg-color);
   --link-hover-bg: var(--font-color);
-  --link-border-color: #ffffff;
+  --link-border-color: var(--font-color);
   --link-border-size: 1px;
   --link-border-style: solid;
   --link-border-width: 2px;
