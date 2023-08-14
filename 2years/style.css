@@ -34,14 +34,15 @@ a {
 }
 
 .input-group {
-  margin: 15px 0; /* Increased margin for more space */
+  margin: 15px 0;
+  padding: 0 15px;
 }
 
 .input-group label {
   font-weight: bold;
   margin-bottom: 5px;
   color: #ff6289;
-  display: block; /* Ensure label takes full width */
+  display: block;
 }
 
 .input-group input {
@@ -49,6 +50,11 @@ a {
   padding: 8px;
   border: none;
   border-radius: 5px;
+}
+
+/* Adjust padding for the password input */
+.input-group input[type="password"] {
+  padding: 8px; /* Keep the same padding as other inputs */
 }
 
 .input-group input::placeholder {
